@@ -39,6 +39,10 @@ int main(int argc, const char** argv) {
     if (argc >= 3) {
         circleSegmentCount = std::stof(argv[2]);
     }
+    if (argc >= 4) {
+        circleSegmentCount = std::stof(argv[3]);
+    }
+
 
     // glfw 라이브러리 초기화, 실패하면 에러 출력후 종료
     SPDLOG_INFO("Initialize glfw");

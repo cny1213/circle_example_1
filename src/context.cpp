@@ -60,7 +60,7 @@ void Context::CreatCircle(float radius, int segment) {
         std::vector<float> vertices;
         std::vector<uint32_t> indices;
 
-        const float pi = 3.141592f;
+         const float pi = 3.141592f;
         vertices.push_back(0.0f);
         vertices.push_back(0.0f);
         vertices.push_back(0.0f);
@@ -73,11 +73,11 @@ void Context::CreatCircle(float radius, int segment) {
            vertices.push_back(0.0f);
         }
 
-        for (int i = 0; i < segment; i++) {
-            indices.push_back(0);
+         for (int i = 1; i <= segment; i++) {
+            indices.push_back(i);
             indices.push_back(i + 1);
-            if (i == segment -1)
-                indices.push_back(1);
+            if (i == segment-1)
+                indices.push_back(segment - i);
             else
                 indices.push_back(i + 2);
         }

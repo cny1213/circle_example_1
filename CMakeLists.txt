@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.13)
 
-set(PROJECT_NAME opengl_circle)
+set(PROJECT_NAME circle_example)
 set(CMAKE_CXX_STANDARD 17)
 
-set(WINDOW_NAME "Opengl Circle")
+set(WINDOW_NAME "Circle Example")
 set(WINDOW_WIDTH 512)
 set(WINDOW_HEIGHT 512)
 
